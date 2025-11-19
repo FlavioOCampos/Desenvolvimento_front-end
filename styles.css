@@ -1,0 +1,164 @@
+:root{--accent:#52d3b3;--muted:#6b7280}
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f5f7fb;color:#111}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+.top{display:flex;align-items:center;gap:1rem}
+.brand{margin:0}
+nav .nav{list-style:none;padding:0;margin:0;display:flex;gap:0.75rem}
+nav a{text-decoration:none;color:#063c4a}
+#cart-btn{margin-left:auto;padding:0.4rem 0.6rem;border-radius:6px;border:1px solid #cbd5e1;background:#3a5e74;cursor:pointer}
+
+/* grid de produtos */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.card{background:#fff;padding:0.75rem;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center}
+.card img{max-width:100%;height:auto;border-radius:6px}
+.card h3{margin:0.5rem 0 0.25rem 0}
+.desc{color:var(--muted);font-size:0.95rem}
+.preco{color:#065f46;font-weight:700;margin:0.4rem 0}
+.add-btn{background:var(--accent);color:#fff;border:none;padding:0.5rem 0.75rem;border-radius:6px;cursor:pointer;transition:transform .12s}
+.add-btn:hover{transform:translateY(-3px)}
+
+/* carrinho */
+.cart{position:fixed;right:16px;bottom:80px;width:260px;background:#fff;border-radius:8px;padding:0.75rem;box-shadow:0 6px 18px rgba(0,0,0,0.1)}
+.cart h2{margin-top:0}
+.cart-items{list-style:none;padding:0;margin:0;max-height:220px;overflow:auto}
+.cart-items li{display:flex;justify-content:space-between;padding:0.3rem 0;border-bottom:1px solid #eee}
+
+/* formulário */
+.checkout{margin-top:1.2rem;background:#fff;padding:1rem;border-radius:8px}
+.checkout label{display:block;margin-top:0.6rem}
+.checkout input, .checkout select, .checkout button{width:100%;padding:0.5rem;border-radius:6px;border:1px solid #47668b;margin-top:0.25rem}
+.checkout button{margin-top:0.8rem;background:#52d3b3;border:none;cursor:pointer}
+
+/* responsividade */
+@media (max-width:900px){
+  .cart{position:static;width:100%;margin:1rem 0}
+  .top{flex-wrap:wrap}
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f3f3;
+}
+
+/* Cabeçalho simples */
+header {
+    background: #0b3b54;
+    color: rgb(196, 111, 62);
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #d6ecff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+}
+
+
+.intro {
+    text-align: center;
+}
+
+.intro img {
+    width: 250px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #aaa;
+}
+
+
+.form {
+    max-width: 300px;
+    background: white;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 6px;
+    margin-top: 4px;
+}
+
+button {
+    width: 100%;
+    background: #0b3b54;
+    color: #eef0ff;
+    padding: 8px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0c4a70;
+        
+}
+
+#resultado {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    background: #0b1721;
+    color: white;
+    text-align: center;
+}
+
+
+.card {
+    background: #fff;
+    padding: 0.75rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(2,6,23,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* empurra o botão para baixo */
+    height: 100%; /* garante altura consistente */
+    
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+.card h3 {
+    margin: 0.5rem 0 0.25rem 0;
+}
+.desc {
+    color: var(--muted);
+    font-size: 0.95rem;
+    flex-grow: 1; 
+}
+.preco {
+    color: #065f46;
+    font-weight: 700;
+    margin: 0.4rem 0;
+}

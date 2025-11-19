@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LojasFácil  </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="top container">
+      <h1 class="brand">LojasFácil</h1>
+      <nav aria-label="menu principal">
+        <ul class="nav">
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <button id="cart-btn">Carrinho (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <!-- Música de fundo -->
+  <audio id="bgm" src="good for the ghost - Alge.mp3" loop></audio>
+
+  <!-- Produtos -->
+  <main class="container">
+    <section id="produtos" class="produtos">
+      <h2>Nossos Produtos</h2>
+      <div class="grid container-produtos">
+       
+        <article class="card" data-id="1">
+          <img src="imagens/sofa_3_lugares.jpg" alt="Sofá 3 lugares" />
+          <h3>Sofá 3 lugares</h3>
+          <p class="desc">Sofá confortável para sala.</p>
+          <p class="preco">R$ 2.499,00</p>
+          <button class="add-btn" data-id="1">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="card" data-id="2">
+          <img src="imagens/poltrona_moderna.jpg" alt="Poltrona moderna" />
+          <h3>Poltrona moderna</h3>
+          <p class="desc">Poltrona de design.</p>
+          <p class="preco">R$ 899,00</p>
+          <button class="add-btn" data-id="2">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="card" data-id="3">
+          <img src="imagens/mesa_jantar.jpg" alt="Mesa de jantar" />
+          <h3>Mesa de jantar</h3>
+          <p class="desc">Mesa para 6 pessoas.</p>
+          <p class="preco">R$ 1.299,00</p>
+          <button class="add-btn" data-id="3">Adicionar ao carrinho</button>
+        </article>
+
+        
+        <article class="card" data-id="4">
+          <img src="imagens/cadeira_jantar.jpg" alt="Cadeira de jantar"/>
+          <h3>Cadeira de jantar</h3>
+          <p class="desc">Cadeira confortável.</p>
+          <p class="preco">R$ 420,00</p>
+          <button class="add-btn" data-id="4">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="card" data-id="5">
+          <img src="imagens/cama.jpg" alt="Cama casal"/>
+          <h3>Cama casal</h3>
+          <p class="desc">Cama com cabeceira estofada.</p>
+          <p class="preco">R$ 1.799,00</p>
+          <button class="add-btn" data-id="5">Adicionar ao carrinho</button>
+        </article>
+
+        <article class="card" data-id="6">
+          <img src="imagens/guarda_roupa.jpg" alt="Guarda-roupa"/>
+          <h3>Guarda-roupa</h3>
+          <p class="desc">Guarda-roupa com portas de abrir.</p>
+          <p class="preco">R$ 2.890,00</p>
+          <button class="add-btn" data-id="6">Adicionar ao carrinho</button>
+        </article>
+      </div>
+    </section>
+
+    <aside id="cart" class="cart" aria-labelledby="cart-heading">
+      <h2 id="cart-heading">Carrinho</h2>
+      <ul id="cart-items"></ul>
+      <div class="cart-footer">
+        <p>Total: <strong id="cart-total">R$ 0,00</strong></p>
+        <button id="clear-cart">Limpar carrinho</button>
+      </div>
+    </aside>
+
+    <section id="checkout" class="checkout">
+      <h2>Finalizar Compra</h2>
+      <form id="checkout-form">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" required minlength="3" />
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="endereco">Endereço</label>
+        <input id="endereco" name="endereco" type="text" required />
+
+        <label for="pagamento">Pagamento</label>
+        <select id="pagamento" name="pagamento" required>
+          <option value="">Escolha...</option>
+          <option value="boleto">Boleto</option>
+          <option value="cartao">Cartão</option>
+          <option value="pix">PIX</option>
+        </select>
+
+        <button type="submit">Enviar pedido</button>
+        <p id="form-message" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p>Loja comercial criada para desenvolvimento do trabalho de front-end, o tema é "e-commerce"</p>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Email: exemplo@lojafacil.com</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 LojasFácil - Projeto didático</p>
+    </div>
+    <!-- Música de fundo -->
+  <audio id="bgm" src="good for the ghost - Alge.mp3" loop></audio>
+  </footer>
+
+  <script src="script.js"></script>
+
+  
+</body>
+</html>
