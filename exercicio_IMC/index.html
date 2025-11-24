@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>IMC simples</title>
+</head>
+<body>
+  <script> 
+  
+  // capitura informações do usuário e calcula o IMC
+    let nome = prompt("Digite seu nome:");
+    let peso = prompt("Digite seu peso (kg):");
+    let altura = prompt("Digite sua altura (m) com ponto:");
+
+
+    //chamnando a funcao para calcular o IMC
+    let imc = calcularIMC(peso,altura);
+    //chamando a funcao para classificar o IMC
+    let classificacao = classificarIMC(imc);
+    //chamando a funcao para exibir o resultado
+    alert("nome: "+nome+"\n IMC: "+imc.toFixed(2)+"\nClassificação: "+classificacao);
+
+  //funcao para calcular o IMC
+    function calcularIMC(peso, altura) {
+      return ( peso / (altura * altura));
+    }
+  // funcao para classificar o IMC
+    function classificarIMC(imc) {
+    let classificacao;
+    if (imc < 18.5)
+      classificacao = "Abaixo do peso";
+    else if (imc < 25) 
+      classificacao = "Peso normal";
+    else if (imc < 30)
+      classificacao = "Sobrepeso";
+    else
+      classificacao = "Obeso";
+    }
+
+    
+  </script>
+</body>
+</html>
