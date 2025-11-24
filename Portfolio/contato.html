@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>Entre em Contato</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+         <li><a href="agradecimento.html">agradecimento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="https://formsubmit.co/seuemail@exemplo.com" method="POST">
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea name="mensagem" id="mensagem" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+      <input type="hidden" name="_next" value="https://seudominio.com/agradecimento.html">
+    </form>
+  </main>
+
+  <footer>
+    <p>Redes Sociais:</p>
+    <a href="https://github.com/seuusuario">GitHub</a> |
+    <a href="https://linkedin.com/in/seuusuario">LinkedIn</a>
+  </footer>
+</body>
+</html>
