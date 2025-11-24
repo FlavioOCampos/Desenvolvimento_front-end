@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>restaurante comunitario</title>
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <style>
+body {
+    background-image: url(_imagens/background_comida.jpg);
+}
+
+    </style>
+</head>
+
+<body>    
+<hgroup>
+<header id="cabecalho">
+        <div class="container-imagens" style="display: flex; align-items: center; gap: 20px; justify-content: center;">
+            <img src="_imagens/gdf_com_arvore.png" alt="refeição" width="265" height="500"/>
+            <h1>Restaurante Comunitário</h1>
+            <img src="_imagens/Bandeira_do_Distrito_Federal_Brasil.png" alt="bandeira do Distrito Federal em fundo branco" width="200" height="150"/>
+        </div>
+
+        
+        <h2>Alimentando a Comunidade com Coração</h2>
+        <nav id="menu">
+            <ul>
+                <li><a href="#cadastro">cadastro</a></li><span class="multidisciplinaresubmenu-separador">|</span>
+                <li><a href="#sobre-restaurante">Sobre Restaurante</a></li><span class="multidisciplinaresubmenu-separador">|</span>
+                <li><a href="#imagens">Imagens</a></li><span class="multidisciplinaresubmenu-separador">|</span>
+                <li><a href="#videos">Vídeos</a></li><span class="multidisciplinaresubmenu-separador">|</span>
+                <li><a href="#menu_cardapio">menu</a></li><span class="multidisciplinaresubmenu-separador">|</span>
+                <li><a href="#precos">Preços</a></li><span class="multidisciplinaresubmenu-separador">|</span>
+                <li><a href="#horario">Horários</a></li><span class="multidisciplinaresubmenu-separador">|</span>
+                <li><a href="#localizacao">Localização</a></li><span class="multidisciplinaresubmenu-separador">|</span>
+                <li><a href="#contato">Contato</a></li><span class="multidisciplinaresubmenu-separador">|</span>
+            </ul>
+        </nav>
+
+    <form>
+    <fieldset>
+        <secion id="cadastro">
+        <legend><b>CASDASTRO PESSOAL</b></legend>
+        
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required placeholder="@" title="Formato: exemplo@dominio.com">
+        
+        <!-- Telefone Celular --><label for="navegador">telefone:</label>
+        <input type="tel" id="telefone" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" 
+        placeholder="(00) 00000-0000" title="Formato: (00) 00000-0000" required>
+
+
+        <label for="nascimento">Nascido:</label>
+        <input type="date" id="nascimento" name="nascimento">
+        
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" 
+               min="18" max="120">
+
+        <!--CPF --><label for="navegador">CPF:</label>
+        <input type="text" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" 
+       placeholder="000.000.000-00" title="Formato: 000.000.000-00"required>
+
+        <!-- CEP --><label for="navegador">CEP:</label>
+        <input type="text" pattern="[0-9]{5}-[0-9]{3}"
+       placeholder="00000-000" title="Formato: 00000-000"required>
+
+      <details>
+      <summary><b>LOCAIS DE OPCAÇÃO</b></summary>
+      <p> Taguatinga, Ceilândia, Samambaia, Sobradinho, recanto das emas, Gama.</p>
+      </details>
+
+      <datalist id="navegadores">
+        <option value="Taguatinga">
+        <option value="Ceilândia">
+        <option value="Samambaia">
+        <option value="Sobradinho">
+        <option value="recanto das emas">
+        <option value="Gama">
+        
+
+      </datalist>
+
+      <label for="navegador">Escolha opção :</label>
+      <input list="navegadores" id="navegador" name="navegador">
+
+      <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+
+    </fieldset>
+    </form>
+</header>
+</hgroup>
+
+    
+<main>
+    <section>
+        <secion id="sobre-restaurante">
+        <hgroup>
+        <h2>Sobre o Restaurante</h2>
+        <p>Os Restaurantes Comunitários são equipamentos públicos de segurança alimentar e nutricional que têm como finalidade preparar e comercializar refeições saudáveis a preços acessíveis. Seu objetivo é facilitar o acesso à alimentação adequada, respeitando as características culturais e os hábitos alimentares da região, com prioridade para as famílias em situação de vulnerabilidade social. 
+        Criado pelo Governo do Distrito Federal, por meio da Lei Nº 4.208, de 25 de setembro de 2008, regulamentado pelo Decreto Nº 29.975, de 27 de janeiro de 2009, o programa Restaurante Comunitário foca em garantir o Direito Humano à Alimentação Adequada (DHAA). 
+
+        Atualmente existem 18 Restaurantes Comunitários no DF: Arniqueira, Brazlândia, Ceilândia, Estrutural, Gama, Itapoã, Paranoá, Planaltina, Recanto das Emas, Riacho Fundo II, Samambaia, Samambaia Expansão, Santa Maria, São Sebastião, Sobradinho, Sol Nascente, Sol Nascente/Pôr do Sol e Varjão. Todos eles estão sob gestão da Subsecretaria de Segurança Alimentar e Nutricional (Subsan). 
+
+        As unidades estão localizadas nos centros urbanos do DF, em regiões de grande movimentação diária de trabalhadores de baixa renda como, por exemplo, as áreas centrais das cidades e que, quando possível, também estejam próximas a locais de grande circulação com transporte público disponível. 
+
+        É importante informar que a estrutura física dos Restaurantes Comunitários é mantida pelas empresas contratadas para prestação do serviço continuado de alimentação e nutrição. Os recursos utilizados para contratação dos serviços da rede de Restaurantes Comunitários vêm da arrecadação de impostos, taxas e tributos que todos os cidadãos pagam ao Governo.
+
+        Valor das refeições e horário de atendimento 
+
+        Café da Manhã: R$ 0,50, servido das 7h às 9h. Exceto no Restaurante Comunitário de Brazlândia, onde o café da manhã é servido das 6h20 às 8h20. 
+
+        Almoço: R$ 1,00, servido das 11h às 14h. 
+
+        Jantar: R$ 0,50, servido das 17h às 19h
+
+        Tipos de refeição oferecidos nos Restaurantes Comunitários do DF
+
+        Unidades que servem café da manhã, almoço e jantar: Arniqueira, Brazlândia, Itapoã, Paranoá, Planaltina, Recanto das Emas, Samambaia Expansão, São Sebastião, Sobradinho, Sol Nascente /Pôr do Sol e Varjão. 
+
+        Unidades que servem café da manhã e almoço: Ceilândia, Estrututal, Samambaia e Sol Nascente. 
+
+        Unidades que servem somente o almoço: Gama, Riacho Fundo II, Santa Maria. 
+
+        Formas de pagamento 
+
+        Unidades que aceitam pagamento em dinheiro, PIX, cartão de crédito, cartão de débito, Cartão Prato Cheio e DF Social: Arniqueira, Itapoã, Planaltina, Recanto das Emas, São Sebastião, Samambaia Expansão, Sobradinho e Sol Nascente/Pôr do Sol e Varjão.
+
+        Unidades que aceitam pagamento em dinheiro e via PIX: Brazlândia, Ceilândia, Gama, Paranoá, Riacho Fundo II, Samambaia, Santa Maria e Sol Nascente. 
+
+        A população em situação de rua tem direito à gratuidade nas refeições, não precisando pagar nenhum valor para acessar os Restaurantes Comunitários. 
+
+        As Gerências Regionais de Segurança Alimentar e Nutricional (Gersan) 
+
+        As Gerências Regionais de Segurança Alimentar e Nutricional (Gersan) são unidades responsáveis pela gestão e supervisão das atividades realizadas nos Restaurantes Comunitários do Distrito Federal.
+
+        Cada um dos dezoito Restaurantes Comunitários conta com uma Gersan, que atua diretamente na garantia da qualidade dos serviços prestados e no cumprimento das normas higiênico-sanitárias, assegurando que as refeições oferecidas, além de nutritivas, sejam seguras. A Gersan também promove a articulação da rede pública de equipamentos de segurança alimentar e nutricional com as redes socioassistenciais e outras conexas no território de atuação. 
+
+        As Gersans são formadas por equipes multidisciplinares que objetivam garantir a qualidade da prestação do serviço à população.</p>
+
+        <secion id="imagens"></secion>
+        <h2>images</h2>
+            
+            <img src="_imagens/bandejao.jpeg" alt="bandejão" width="100%"/>
+            <img src="_imagens/restaurante-comunitario-300x187.jpg" alt="fachada do restaurante" width="50%"/>
+            <img src="_imagens/objetivo.jpg" alt="refeição" width="25%"/>
+     
+    
+        <secion id="videos"></secion>    
+        <h2>videos</h2>
+        <hgroup>
+                      
+            <iframe height="100%" src="https://www.youtube.com/embed/LTpcuxPh5kM?si=c6LihwwdYofD_lQG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            <iframe height="100%" src="https://www.youtube.com/embed/8tx3VRI6FWE?si=4wWU3srYartcmdy6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <iframe heigth="100%" src="https://www.youtube.com/embed/R1uTikHK48k?si=LBiMloYy4SS3X_Bc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           
+        </hgroup>
+    </section>
+</main>
+<article>
+        <section>
+        <secion id="menu_cardapio"></secion>
+        <h2>Menu</h2>
+        <ul>
+            <li>
+                <b>PRATO DO DIA</b><br>
+                <img src="_imagens/prato_do_dia.png" alt="prato do dia" width="100" height="100"/>
+            </li>
+            <li>
+                <b>VEGETARIANA</b><br>
+                <img src="_imagens/jacalouca.png" alt="vegetariano" width="100" height="100"/>
+            </li>
+            <li>
+                <b>SOBREMESA</b><br>
+                <img src="_imagens/pudim.png" alt="sobremesa" width="100" height="100"/>
+            </li>
+            <li>
+                <b>BEBIDAS</b><br>
+                <img src="_imagens/copo_laranja.png" alt="bebidas" width="100" height="100"/>
+            </li>
+        </ul>
+
+        <img src="_imagens/cardápio-restaurante-comunitário-df.png" alt="cardapio restaurante comunitario" width="100%" height="500"/>
+        <br>
+        <embed  src="_imagens/Cardapio_Almoco___Julho_2025___com_valor_calorico.pdf" alt="cardapio almoco julho 2025" width="100%" height="1000"/>
+        <br>
+        <embed  src="_imagens/Relatório_Diagnóstico-sobre-novos-Restaurantes-Comunitários-no-Distrito-Federal.pdf" alt="cardapio jantar julho 2025" width="100%" height="1000"/>
+        <br>
+
+    </section>
+</article>
+<aside> 
+    <section>
+        <secion id="precos"></secion>
+        <table>
+    <h2>Preços</h2>
+        <tr>
+            <th>Item</th>
+            <th>ingredientes</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>Prato do dia:</td>
+            <td> Arroz, feijão, carne ou frango, salada e legumes</td>
+            <td>R$ 1,00</td>
+        </tr>
+        <tr>
+            <td>Opção vegetariana:</td>
+            <td> Arroz, feijão, legumes e salada carne de</td>
+            <td>R$ 1,00</td>
+        </tr>
+        <tr>
+            <td>Sobremesa:</td>
+            <td> Fruta da estação ou pudim.</td>
+            <td>R$ 1,00</td>
+        </tr>
+        <tr>
+            <td>Bebidas:<br>
+            <td> Água, suco natural ou chá.</td>
+            <td>R$ 0,50</td>
+        </tr>
+    </table></section> 
+</aside>
+
+           
+<FOoter>
+    <section>
+        <secion id="horario"></secion>
+        <h2>Horário de Funcionamento</h2>
+        <p>Segunda a Sexta: 11h00 - 14h00</p>
+        <p>Sábado: 12h00 - 15h00</p>
+        <p>Domingo: Fechado</p>
+    </section>
+    <section>
+        <secion id="localizacao"></secion>
+        <h2>Localização</h2>
+        <p>Rua da Comunidade, 123 - Bairro Central, Cidade XYZ</p>
+    </section>
+    <section>
+        <secion id="contato"></secion>
+        <h2>Contato</h2>
+        <p>Email: www.gdf.gov.br         
+        <p>wastapp: (11) 1234-5678</p>
+        <p>Telefone: (11) 1234-5678</p> 
+        <p>Redes Sociais: @restaurantecomunitario</p>
+    </section>
+
+    <img src="_imagens/Logo GDF.jpg" alt="logotipo do gdf" width="150" height="100"/>
+    <p>&copy; 2024 Restaurante Comunitário. Todos os direitos reservados.</p>
+    <img src="_imagens/Bandeira_do_Distrito_Federal_Brasil.png" alt="refeição" width="150" height="150"/>
+    </section>
+</FOoter>
+</body>
+</html>
